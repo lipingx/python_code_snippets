@@ -10,6 +10,7 @@ file_handler = logging.FileHandler('sample.log')
 file_handler.setLevel(logging.ERROR)
 file_handler.setFormatter(formatter)
 
+# show log on stdout
 stream_handler = logging.StreamHandler()
 stream_handler.setFormatter(formatter)
 
@@ -37,6 +38,7 @@ def divide(x, y):
     try:
         result = x / y
     except ZeroDivisionError:
+        # Log with traceback.
         logger.exception('Tried to divide by zero')
     else:
         return result

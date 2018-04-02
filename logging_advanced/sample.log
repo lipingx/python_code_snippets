@@ -1,0 +1,5 @@
+2018-04-01 18:35:35,925:__main__:Tried to divide by zero
+Traceback (most recent call last):
+  File "log_sample.py", line 39, in divide
+    result = x / y
+ZeroDivisionError: integer division or modulo by zero
